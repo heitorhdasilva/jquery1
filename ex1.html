@@ -93,7 +93,39 @@
                 $('h1').css("border","dotted");
             });
             $("#bt24").click(function () {
-                var txt = $('#paragrafo1').attr("");
+                var txt = $('#paragrafo1').css(["color"]);
+                $.each( txt, function( prop, value ) {
+                    alert(value);
+                });
+            });
+            $("#bt25").click(function () {
+                $('#paragrafo2').css({"background-color":"marron",
+                    "color":"red",
+                    "font-size":"25px",
+                    "padding":"15px"});
+            });
+            $("#bt26").click(function () {
+                var txt = $('input').css(["width"]);
+                $.each( txt, function( prop, value ) {
+                    alert(value);
+                });
+            });
+            $("#bt27").click(function () {
+                var txt = $('#paragrafo1').css(["height"]);
+                $.each( txt, function( prop, value ) {
+                    alert(value);
+                });
+            });
+            $("#bt28").click(function () {
+                $('.outro').parent().css("border","dotted");
+            });
+            $("#bt29").click(function () {
+                $('span').parents().css({"border-width":"thin",
+                                        "border-style":"solid"});
+            });
+            $("#bt30").click(function () {
+                $('header').children().css({"border-width":"thin",
+                    "border-style":"solid"});
             });
 
         });
